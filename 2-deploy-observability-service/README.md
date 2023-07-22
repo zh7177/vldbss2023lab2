@@ -70,6 +70,7 @@ all our service is running on EC2.
     
     # View the alerts
     $ kubectl port-forward svc/vmalertmanager-default-alertmanager 9093:9093
+    $ kubectl port-forward --address 0.0.0.0 svc/vmalertmanager-default-alertmanager 9093:9093 #if connect without localhost
     Forwarding from 127.0.0.1:9093 -> 9093
     Forwarding from [::1]:9093 -> 9093
 
