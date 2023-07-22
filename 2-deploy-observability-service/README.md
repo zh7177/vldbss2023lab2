@@ -55,6 +55,7 @@ all our service is running on EC2.
    
     # View the metrics we collected 
     $ kubectl port-forward svc/vmselect-vmcluster -n observability 8481:8481
+    $ kubectl port-forward --adress 0.0.0.0 svc/vmselect-vmcluster -n observability 8481:8481 #if connect without localhost
     Forwarding from 127.0.0.1:8481 -> 8481
     Forwarding from [::1]:8481 -> 8481
 
